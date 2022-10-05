@@ -1,25 +1,22 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+import Dashboard from './pages/Dashboard';
+import Grid from '@mui/material/Unstable_Grid2';
+import LeftSide from './components/LeftSide';
+import Topbar from './components/Topbar';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Grid container spacing={0} style={{ height: "100vh" }} >
+      <Grid xs={3} md={3}>
+        <LeftSide />
+      </Grid>
+      <Grid xs={9} md={9}>
+        <Topbar />
+        <Dashboard />
+      </Grid>
+    </Grid>
+  )
 }
 
 export default App;

@@ -1,0 +1,44 @@
+.content {
+    display: block;
+    padding: 0 150px;    
+}
+
+.heading-chat {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    color: #151313;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.card-section {
+    display: flex;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 15px;
+    width: 500px;
+    height: 304px;   
+    
+    .navbar-item {
+        text-decoration: none;
+    }
+}
+
+.icon-section {
+    display: flex;
+    justify-content: center;
+    padding-top: 80px
+}
+
+.card-label {
+    font-size: 40px;
+    color: #606F88;
+    text-align: center;
+    font-weight: 700;
+}

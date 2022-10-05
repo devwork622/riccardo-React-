@@ -1,0 +1,51 @@
+.left-side-section {
+    background: url("../../assets/images/Rectangle\ 208.png") no-repeat;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 50px;
+    box-sizing: border-box;
+    overflow-y: scroll;    
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 1px;   
+    
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.logo-section {
+    height: 68px;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
+
+.tree-section {
+    padding-top: 100px;
+}
+
+.MuiTreeItem-label {
+    font-family: "Mulish" !important;
+    font-size: 20px !important;
+}
+
+li {
+    padding-top: 10px !important;
+}
