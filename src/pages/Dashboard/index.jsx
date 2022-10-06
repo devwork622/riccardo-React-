@@ -5,7 +5,7 @@ import icon1 from "../../assets/images/icon-layer.png";
 import icon2 from "../../assets/images/icon-dollar.png";
 import icon3 from "../../assets/images/icon-group.png";
 import icon4 from "../../assets/images/icon-tag.png";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 const Dashboard = () => {
     return (
@@ -15,7 +15,7 @@ const Dashboard = () => {
                 <Grid container spacing={5}>
                     <Grid xs={6} md={6}>
                         <div className='card'>
-                            <NavLink className="navbar-item" to="/">
+                            <NavLink className="navbar-item" to="#">
                                 <div className='icon-section'>
                                     <img src={icon1} />
                                 </div>
@@ -27,7 +27,7 @@ const Dashboard = () => {
                     </Grid>
                     <Grid xs={6} md={6}>
                         <div className='card'>
-                            <NavLink className="navbar-item" to="/">
+                            <NavLink className="navbar-item" to="#">
                                 <div className='icon-section'>
                                     <img src={icon2} />
                                 </div>
@@ -39,7 +39,7 @@ const Dashboard = () => {
                     </Grid>
                     <Grid xs={6} md={6}>
                         <div className='card'>
-                            <NavLink className="navbar-item" to="/">
+                            <NavLink className="navbar-item" to="#">
                                 <div className='icon-section'>
                                     <img src={icon3} />
                                 </div>
@@ -51,7 +51,7 @@ const Dashboard = () => {
                     </Grid>
                     <Grid xs={6} md={6}>
                         <div className='card'>
-                            <NavLink className="navbar-item" to="/">
+                            <NavLink className="navbar-item" to="/tag">
                                 <div className='icon-section'>
                                     <img src={icon4} />
                                 </div>

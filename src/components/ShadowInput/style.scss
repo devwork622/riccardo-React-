@@ -1,0 +1,56 @@
+.shadow-input {
+    font-size: 25px;
+    width: 220px;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.1), 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 6px;    
+    padding: 15px 50px;
+}
+
+input:focus{
+    outline: none;
+}
+
+input::placeholder {
+    font-size: 20px;
+    color: rgba(35, 39, 56, 0.5);
+    font-family: 'Mulish';    
+}
+
+.input-icons svg {
+    position: absolute;
+    margin-left: 15px;
+    color: rgba(35, 39, 56, 0.5);
+}
+
+.input-icons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.tag-card-section {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 200px;
+    margin: 50px 0;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.tag-card-text {
+    font-family: 'Mulish';
+    font-weight: 500;
+    font-size: 20px;
+    color: #828282;
+}
+
+.pt-3 {
+    padding-top: 30px;
+}
