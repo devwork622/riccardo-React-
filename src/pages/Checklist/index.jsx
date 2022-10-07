@@ -11,6 +11,8 @@ import CustomButton from '../../components/CustomButton';
 import TextBtn from '../../components/TextBtn';
 import { useDispatch, useSelector } from "react-redux";
 import { GetTagName } from '../../redux/Tags/actions';
+import iconSearch1 from "../../assets/images/icon-search 1.png"
+import IconButton from '@mui/material/IconButton';
 
 const style = {
     position: 'absolute',
@@ -26,7 +28,7 @@ const style = {
     p: 4,
 };
 
-const Tag = () => {
+const Checklist = () => {
 
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
@@ -39,14 +41,14 @@ const Tag = () => {
     const onChangeInput = (_val) => {
         setTmpVal(_val);
     }
-    
+
     const onClickBtn = () => {
         dispatch(GetTagName(tmpVal));
     }
 
     return (
         <div className='tag-section'>
-            <p className='text-breadcrumb'>Tag</p>
+            <p className='text-breadcrumb'>Checklist e verbali</p>
             <div className='tag-section-items'>
                 <ShadowInput />
                 <Button onClick={handleOpen}>
@@ -90,17 +92,15 @@ const Tag = () => {
                     <p>{tagName}</p>
                 </div>
             ) : (
-                <div className='tag-card-section'>
-                    <div className='d-flex justify-content-center'>
-                        <img src={bigTagImg} />
-                    </div>
-                    <div className='d-flex justify-content-center pt-3'>
-                        <p className='tag-card-text'>Non hai aggiunto ancora alcun tag</p>
-                    </div>
+                <div className='checklist-card-section d-flex align-items-center justify-content-space-between'>
+                    <p>Verbale Intervento</p>
+                    <IconButton aria-label="search1">
+                        <img src={iconSearch1} />
+                    </IconButton>
                 </div>
             )}
         </div>
     );
 }
 
-export default Tag;
+export default Checklist;

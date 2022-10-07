@@ -8,6 +8,7 @@ import TreeItem from '@mui/lab/TreeItem';
 import { fontSize } from "@mui/system";
 import ExpandLessOutlinedIcon from '@mui/icons-material/ExpandLessOutlined';
 import ExpandMoreOutlinedIcon from '@mui/icons-material/ExpandMoreOutlined';
+import { Link } from "react-router-dom";
 
 
 
@@ -15,7 +16,9 @@ const LeftSide = () => {
     return (
         <div className="left-side-section">
             <div className="logo-section">
-                <img src={logoImg} />
+                <Link to="/">
+                    <img src={logoImg} />
+                </Link>
             </div>
             <div className="tree-section">
                 <TreeView
@@ -23,7 +26,7 @@ const LeftSide = () => {
                     defaultCollapseIcon={<ExpandMoreIcon />}
                     defaultExpandIcon={<ChevronRightIcon />}
                     multiSelect
-                    sx={{ height: 216, flexGrow: 1, color: "#fff"}}
+                    sx={{ height: 216, flexGrow: 1, color: "#fff" }}
                     className="treeview"
                 >
                     <TreeItem nodeId="1" label="Dashboard" />

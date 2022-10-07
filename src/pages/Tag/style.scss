@@ -12,3 +12,58 @@
     display: flex;
     justify-content: space-between;
 }
+
+.modal-title {
+    font-family: 'Mulish';
+    font-weight: 700;
+    font-size: 32px;
+    padding: 0px 50px;    
+}
+
+.close-button {
+    border: none;
+    display: inline-block;
+    padding: 5px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap
+}
+
+.topright {
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.modal-header {
+    color: #ccc;
+    cursor: pointer;
+    font-size: 40px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.modal-content {
+    padding: 0px 50px; 
+
+    .form-group {
+        margin-bottom: 1rem;
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-family: 'Mulish';
+            font-weight: 500;
+            font-size: 16px;
+            color: #606F88;
+        }               
+    }
+    .slava-btn-section {        
+        padding-top: 50px;
+    }
+}

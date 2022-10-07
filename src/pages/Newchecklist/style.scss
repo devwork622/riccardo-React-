@@ -1,0 +1,140 @@
+.input-checklist {
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #BDBDBD;
+    height: 50px;
+    width: 393px;
+    padding: 0 30px;
+}
+
+.content-section {
+    margin-top: 20px;
+    padding: 10px 50px;
+}
+
+.card-newchecklist {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 20px 30px;
+    height: 600px;
+    box-shadow: rgb(0 0 0 / 20%) 0px 2px 2px 0px, rgb(0 0 0 / 14%) 0px 2px 2px 0px, rgb(0 0 0 / 12%) 0px 2px 0px 0px;
+    overflow-y: scroll;
+
+    .title {
+        font-family: 'Mulish';
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    .sub-title {
+        font-family: 'Mulish';
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    .text-data {
+        font-family: 'Mulish';
+        font-weight: 400;
+        font-size: 20px;
+        color: #B1B4BA;
+    }
+
+    .pt-150 {
+        padding-top: 150px;
+    }
+
+    .pb-150 {
+        padding-bottom: 150px;
+    }
+
+    .card-newchecklist-footer {
+        position: absolute;
+        bottom: 20px;
+        right: 10px;
+
+        .mx-1 {
+            margin: 0 10px;
+        }
+    }
+}
+
+.field-title {
+    p {
+        font-family: 'Mulish';
+        font-weight: bold;
+        font-size: 16px;
+    }
+}
+
+.field-item {
+    .field-table {
+        width: 95%;
+        padding: 20px;
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        border-radius: 5px;
+
+        .item-many {
+            width: 90%;
+
+            .item-children-1 {
+                width: 59%;
+            }
+
+            .item-children-2 {
+                width: 30%;
+            }
+        }
+
+        .item-1 {
+            width: 50%;
+        }
+
+        .item-2 {
+            width: 40%;
+        }
+
+        img {
+            width: 8px;
+            height: 15px;
+        }
+
+        div input {
+            border: 1px solid #E0E0E0;
+            border-radius: 5px;
+            width: 300px;
+            font-size: 15px;
+            padding: 7px 20px;
+        }
+    }
+
+    .icon-trash {
+        width: 5%;
+        padding-left: 20px;
+    }
+}
+
+.icon-btn {
+    font-size: 16px;
+    padding: 2px 10px !important;
+}
+
+.icon-btn-warning {
+    color: #F2994A !important;
+    background-color: rgb(255, 244, 229) !important;
+}
+
+.icon-btn-primary {
+    color: #03a9f4 !important;
+    background-color: rgb(229, 246, 253) !important;
+}
+
+.icon-btn-danger {
+    color: #ef5350 !important;
+    background-color: rgb(253, 237, 237) !important;
+}
+
+.icon-btn-success {
+    color: #4caf50 !important;
+    background-color: rgb(237, 247, 237) !important;
+}

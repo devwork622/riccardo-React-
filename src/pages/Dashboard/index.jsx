@@ -15,7 +15,7 @@ const Dashboard = () => {
                 <Grid container spacing={5}>
                     <Grid xs={6} md={6}>
                         <div className='card'>
-                            <NavLink className="navbar-item" to="#">
+                            <NavLink className="navbar-item" to="/checklist">
                                 <div className='icon-section'>
                                     <img src={icon1} />
                                 </div>
@@ -27,7 +27,7 @@ const Dashboard = () => {
                     </Grid>
                     <Grid xs={6} md={6}>
                         <div className='card'>
-                            <NavLink className="navbar-item" to="#">
+                            <NavLink className="navbar-item" to="/newchecklist">
                                 <div className='icon-section'>
                                     <img src={icon2} />
                                 </div>
